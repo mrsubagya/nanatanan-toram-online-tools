@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 /* Header */
@@ -132,8 +133,6 @@ body {
   text-align: left;
   margin-top: 100px;
 }
-
-.content .content-container {}
 
 .content .content-container p,
 .content .content-container a {
@@ -259,5 +258,4 @@ footer .credit a:hover {
   footer .links a {
     padding: 0;
   }
-}
 }
