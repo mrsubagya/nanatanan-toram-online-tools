@@ -196,6 +196,10 @@ footer .credit a:hover {
 /* Media Queries */
 @media (max-width: 992px) {
 
+  .body {
+    overflow: hidden;
+  }
+
   #header {
     padding: 20px;
     z-index: 1500;
