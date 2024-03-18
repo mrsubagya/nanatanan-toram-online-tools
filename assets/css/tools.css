@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+body {
+  background-image: url(../img/galaxy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index: 1000; */
+}
+
+#header .logo {
+  font-weight: 700;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  text-decoration: none;
+}
+
+#header .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .navigation li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#header .navigation li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: 0.5s;
+  text-shadow: 1px 1px #010101;
+}
+
+#header .navigation li a:hover,
+#header .navigation li a.active {
+  background: #fff;
+  color: #010101;
+}
+
+#hamburger-menu {
+  position: relative;
+  color: #fff;
+  display: none;
+  padding: 4px 8px;
+  border-radius: 15px;
+}
+
+#hamburger-menu:hover {
+  color: #010101;
+  background: #fff;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #333;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.title h1 {
+  color: #010101;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.card div {
+  position: relative;
+}
+
+.card img {
+  position: absolute;
+  mix-blend-mode: multiply;
+  bottom: 0;
+  right: 0;
+}
+
+.container>.row>.col-sm-4>small>span {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: right;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.content .content-container {}
+
+.content .content-container p,
+.content .content-container a {
+  color: #fff;
+  font-weight: 600;
+  margin: 0px 5px 0px 0px;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #010101;
+  margin: 1rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: #da9c0d;
+}
+
+footer .links {
+  margin-bottom: 1rem;
+}
+
+footer .links a {
+  color: #010101;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  text-decoration: none;
+  color: #da9c0d;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+footer .credit a:hover {
+  color: #00ff08;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+
+  #header {
+    padding: 20px;
+    z-index: 1500;
+  }
+
+  #header .logo {
+    font-size: 1.5em;
+  }
+
+  #header .navigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #010101;
+    width: 10rem;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.3s;
+
+  }
+
+  #header .navigation.active {
+    right: 0;
+  }
+
+  #header .navigation li a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .content {
+    margin-top: 0;
+  }
+
+  /* footer */
+  footer {
+    padding: 0;
+  }
+
+  footer .social {
+    padding: 0;
+  }
+
+  footer .social a {
+    margin: 0.3rem;
+  }
+
+  footer .links {
+    margin-bottom: 0;
+  }
+
+  footer .links a {
+    padding: 0;
+  }
+}
+}

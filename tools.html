@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NanaTanan | Toram Online Tools</title>
+
+  <link rel="icon" href="" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/tools.css" />
+
+  <!-- My Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet" />
+
+  <!-- My Icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <!-- Header start-->
+  <header id="header">
+    <a href="#" class="logo">MR. Subagya</a>
+    <nav class="navigation">
+      <li><a href="index.html#">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#social">Contact</a></li>
+    </nav>
+    <nav class="navigation-extra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </nav>
+  </header>
+  <!-- Header end-->
+
+  <!-- Main Start -->
+  <div nv-component="Main" class="container-fluid">
+    <div class="title">
+      <h1>Toram Online - Crysta Tools</h1>
+    </div>
+
+    <div class="container mb-5 py-3 sticky-top">
+      <form onsubmit="NV.run('Main').search(event)" class="d-flex">
+        <div class="flex-grow-1">
+          <input list="crystaNameList" name="name" placeholder="Cyrsta Name" class="form-control shadow-sm" />
+          <datalist id="crystaNameList"></datalist>
+        </div>
+        <div class="ms-2">
+          <button class="btn btn-dark shadow-sm">🚀</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-sm-4">
+          <small class="d-flex align-items-center">
+            <hr class="flex-grow-1" />
+            <span class="mx-2">Downgrade</span>
+            <hr class="flex-grow-1" />
+          </small>
+          <ol id="output-down" type="1"></ol>
+        </div>
+        <div class="col-sm-4">
+          <small class="d-flex align-items-center">
+            <hr class="flex-grow-1" />
+            <span class="mx-2">Current Choose</span>
+            <hr class="flex-grow-1" />
+          </small>
+          <ol id="output"></ol>
+        </div>
+        <div class="col-sm-4">
+          <small class="d-flex align-items-center">
+            <hr class="flex-grow-1" />
+            <span class="mx-2">Upgrade</span>
+            <hr class="flex-grow-1" />
+          </small>
+          <ol id="output-up" type="1"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content-container">
+      <p>Source Code By 🎲<a href="https://github.com/AnwarAchilles/toram-crystal-rute" target="_blank">Anwar
+          Achilles</a></p>
+      <p>Source By <a href="https://toram-id.info" target="_blank">Toram-id.info</a></p>
+    </div>
+  </div>
+
+  <!-- Footer start -->
+  <footer>
+    <div class="social" id="social">
+      <a href="https://www.instagram.com/ikiw133" id="instagram" target="_blank"><i data-feather="instagram"></i></a>
+      <a href="https://www.facebook.com/rizkisubagya" id="facebook" target="_blank"><i data-feather="facebook"></i></a>
+      <a href="https://youtube.com/@Nanat69?si=OCMbsZE7oGRr8pB8" target="_blank"><i data-feather="youtube"
+          id="youtube"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="#">Tools</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="https://mrsubagya.github.io/" target="_blank">mrsubagya</a> | &copy; 2024</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leader-line/1.0.3/leader-line.min.js"
+    integrity="sha512-aFBNsI3+D6ObLLtyKwdZPZzDbcCC6+Bh+2UNV8HC0R95BpcBT+dmmZ5NMpJi/Ic8uO0W7FGcg33IfuHg+7Ryew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./nirvana-3.6.js"></script>
+  <script src="./environment.js"></script>
+  <script src="./store.js"></script>
+  <script src="./main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
