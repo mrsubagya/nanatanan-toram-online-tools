@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -195,10 +195,6 @@ footer .credit a:hover {
 
 /* Media Queries */
 @media (max-width: 992px) {
-
-  .body {
-    overflow: hidden;
-  }
 
   #header {
     padding: 20px;
